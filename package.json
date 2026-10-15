@@ -1,0 +1,42 @@
+{
+  "name": "detect-dash",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/server/index.ts",
+    "start": "bun src/server/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "simulate": "bun scripts/simulate.ts",
+    "serve:tailnet": "bash scripts/serve-tailnet.sh",
+    "bench": "bun scripts/bench.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^5.9.0"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "version": "0.1.0",
+  "description": "A local mini SIEM with log ingestion, SQLite storage, detection rules, and a live React dashboard.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoTR04/detect-dash.git"
+  },
+  "engines": {
+    "bun": ">=1.3.14"
+  },
+  "keywords": [
+    "siem",
+    "security",
+    "syslog",
+    "bun",
+    "sqlite",
+    "dashboard"
+  ]
+}
